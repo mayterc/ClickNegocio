@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/assets/favicon.png" type="image/x-icon">
+    <meta name="theme-color" content="#01445D"> <!-- Colocar color en celular -->
     <title>Click</title> 
 </head>
 <body>
     <header>
-    <div class="navbar">
-    <div class="logo"><a href="#"><i class="fa-regular fa-at fa-bounce" style="color: #ffffff;"></i> Click Centro Digital</a></div>
-    <ul class="links">
-        <li><a href="#">Trámites</a></li>
-        <li><a href="#">Citas</a></li>
-        <li><a href="#">Formatos</a></li>
-        <li><a href="#">Consultasssss</a></li>
-        <li><a href="#">Otros Servicios</a></li>
-    </ul>
-     <div class="submenu-wrap">
-    <!-- <a href="#" class="action_btn">Inicio</a> -->
-    <div onclick="toggle_btn();" class="icon">
-        <i class="fa-solid fa-bars" > </i>
-    </div>
-    
-        <!-- <div class="submenu">  -->
-           <div class="menu_mobile">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><i class="fa-regular fa-at fa-bounce" style="color: #ffffff;"></i> Click Centro Digital</a>
+            </div>
+            <ul class="links">
+                <li class="links-menu"><a href="#">Trámites</a></li>
+                <li class="links-menu"><a href="#">Citas</a></li>
+                <li class="links-menu"><a href="#">Formatos</a></li>
+                <li class="links-menu"><a href="#">Consultasssss</a></li>
+                <li class="links-menu"><a href="#">Otros Servicios</a></li>
+            </ul>
+            <div class="submenu-wrap">
+                <div onclick="toggle_btn();" class="icon">
+                    <i class="fa-solid fa-bars" > </i>
+            </div>
+        
+            <div class="menu_mobile">
                 <li><a href="#">Trámites</a></li>
                 <li><a href="#">Citas</a></li>
                 <li><a href="#">Formatos</a></li>
@@ -34,50 +36,18 @@
                 <li><a href="#">Otros Servicios</a></li>
             </div>
         </div>
-        
-    <!-- </div>  -->
- <!-- </div> -->
+        </div>
     </header>  
-  
 
-<script>
-
-     let menu = document.querySelector('.submenu-wrap');
-    let nav = document.querySelector('.menu_mobile');
-
-    function toggle_btn() {
-    nav.classList.toggle("active");
-    }
-    // const toggleBtn = document.querySelector('.toggle-btn')
-    //  toggleBtnIcon = document.querySelector('.toggle-btn i')
-    //  menuMobile = document.querySelector('.menu_mobile')
-
-    // toggleBtn.onclick = function() {
-    //     menuMobile.classList.toggle('open')
-    //     const isOpen = menuMobile.classList.contains('open')
-    //     // const isClose = menuMobile.classList.contains('close')
-    //     menuMobile.classList = isOpen
-    //     toggleBtnIcon.classList = isOpen
-    //     // toggleBtnIcon.classList = isClose
-
-    //     ? 'fa-solid fa-xmark'
-    //     : 'fa-solid fa-bars'
-    // }
-
-//     const $btnOcultar = document.querySelector('.toggle-btn'),
-// 	$btnMostrar = document.querySelector('.toggle-btn i'),
-// 	$parrafo = document.querySelector('.menu_mobile');
-
-// $btnMostrar.addEventListener("click", () => {
-// 	$parrafo.style.display = "block";
-  
-// });
-
-
-// $btnOcultar.addEventListener("click", () => {
-// 	  $parrafo.style.display = "none";
-// });
-   </script>
+    <div class="contactos-main">
+        <h2 class="texto-contaxto">Contactame por estos medios</h2><hr>
+        <ul class="contactos">
+            <li> <a href=" https://wa.me/7121515105"><i class="icon-contacto fa-brands fa-whatsapp" style="color: #ffffff;"></i></a></li>
+            <li> <a href="tel:+7121515105"><i class="icon-contacto fa-regular fa-phone" style="color: #ffffff;"></i></a></li>
+            <li> <a href="mailto:ricardocruzmayte@gmail.com?Subject=Enviado%20por%página%20web"><i class="icon-contacto fa-regular fa-envelope" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </div>
+<script src="./javascript/script.js"></script>
 </body>
 </html>
 
